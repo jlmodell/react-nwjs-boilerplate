@@ -4,6 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run nwjs`
+
+Runs the app in an nw.js window.
+
+### `npm run nwjs-build`
+
+Builds a production app for win64.  You can add win32, mac64, linux64 for additional builds.
+
 ### `npm start`
 
 Runs the app in the development mode.<br />

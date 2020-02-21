@@ -2,6 +2,8 @@
   "name": "react-nwjs-test",
   "version": "0.1.0",
   "private": true,
+  "main": "./public/main.js",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -16,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "nwjs": "nw build/",
-    "nwjs-build": "nwbuild --platforms win64 --buildDir dist/ build/"
+    "nwjs-build": "nwbuild --platforms win64 --buildDir dist/ build/",
+    "nwjs-dev": "concurrently \"set BROWSER=none&&yarn start\" \"wait-on http://localhost:3000 &&set NWJS_START_URL=http://localhost:3000&&nw .\" "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,7 +37,9 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "nw": "^0.44.1-sdk",
-    "nw-builder": "^3.5.7"
+    "nw-builder": "^3.5.7",
+    "wait-on": "^4.0.0"
   }
 }

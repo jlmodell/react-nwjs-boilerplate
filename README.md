@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run nwjs-dev`
+
+Runs the app in a nw.js window with hot-reload.
+
 ### `npm run nwjs`
 
 Runs the app in an nw.js window.

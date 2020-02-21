@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "React.js + NW.js",
+    "toolbar": true,
+    "width": 1200,
+    "height": 900,
+    "min_width": 1200,
+    "min_height": 900,
+    "max_width": 1200,
+    "max_height": 900,
+    "position": "center"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
